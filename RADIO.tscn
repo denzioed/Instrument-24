@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://ctf2psp1danu4"]
+
+[ext_resource type="Texture2D" uid="uid://du3565d6p67pu" path="res://asset/NavRadio.png" id="1_1s8da"]
+[ext_resource type="Script" uid="uid://bq6hs2txsppga" path="res://radio.gd" id="1_3n51x"]
+[ext_resource type="Texture2D" uid="uid://bfn5yl4qk3h28" path="res://asset/RadioSwitch.svg" id="2_ufoc0"]
+[ext_resource type="FontFile" uid="uid://c58qgh48s7x7r" path="res://asset/curved-seven-segment-2.otf" id="3_3n51x"]
+[ext_resource type="Texture2D" uid="uid://qfoqehqbpeky" path="res://asset/RadioDialBig.svg" id="4_ufoc0"]
+
+[sub_resource type="FontVariation" id="FontVariation_6vtgh"]
+base_font = ExtResource("3_3n51x")
+
+[node name="Radio" type="Control" unique_id=278639168]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 358.0058
+offset_bottom = 181.57838
+script = ExtResource("1_3n51x")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=431825500]
+layout_mode = 0
+offset_right = 513.0
+offset_bottom = 259.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_1s8da")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=872745831]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -30.546417
+offset_top = -55.2995
+offset_right = 29.453583
+offset_bottom = -15.2994995
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_ufoc0")
+
+[node name="CURRENT" type="Label" parent="TextureRect" unique_id=1316478126]
+layout_mode = 0
+offset_left = 36.993393
+offset_top = 53.23999
+offset_right = 252.96002
+offset_bottom = 163.55362
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_6vtgh")
+theme_override_font_sizes/font_size = 112
+text = "123.45"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="STBY" type="Label" parent="TextureRect" unique_id=1591651708]
+layout_mode = 0
+offset_left = 259.86124
+offset_top = 52.983208
+offset_right = 475.82788
+offset_bottom = 163.29683
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_6vtgh")
+theme_override_font_sizes/font_size = 112
+text = "123.45"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialBig" type="TextureRect" parent="TextureRect" unique_id=79545324]
+layout_mode = 0
+offset_left = 400.57785
+offset_top = 171.00691
+offset_right = 478.57785
+offset_bottom = 249.00691
+texture = ExtResource("4_ufoc0")
+
+[node name="DialSmall" type="TextureRect" parent="TextureRect" unique_id=1816856619]
+layout_mode = 0
+offset_left = 417.48346
+offset_top = 186.72414
+offset_right = 495.48346
+offset_bottom = 264.72412
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_ufoc0")
+
+[connection signal="mouse_entered" from="TextureRect/DialBig" to="." method="_on_dial_big_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/DialBig" to="." method="_on_dial_big_mouse_exited"]
+[connection signal="mouse_entered" from="TextureRect/DialSmall" to="." method="_on_dial_small_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect/DialSmall" to="." method="_on_dial_small_mouse_exited"]

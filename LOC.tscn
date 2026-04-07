@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dqyskssj8wn42"]
+
+[ext_resource type="Script" uid="uid://bdo7xtwp0nbbk" path="res://NAVAIDS/loc.gd" id="1_n20is"]
+
+[node name="Loc" type="Node2D" unique_id=838210671]
+script = ExtResource("1_n20is")
+CRS = 307

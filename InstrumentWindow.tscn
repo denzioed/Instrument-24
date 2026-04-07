@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://63w785l6cp6r"]
+
+[ext_resource type="Script" uid="uid://5p3fatk77rkk" path="res://window.gd" id="1_g3n0h"]
+
+[node name="Window" type="Window" unique_id=1473533521]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(184, 184)
+unresizable = true
+always_on_top = true
+minimize_disabled = true
+maximize_disabled = true
+script = ExtResource("1_g3n0h")
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]

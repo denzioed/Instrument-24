@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://ctevdvk3n8vuv"]
+
+[ext_resource type="Script" uid="uid://dliv7s3hlfvch" path="res://CDI.gd" id="1_8352q"]
+[ext_resource type="Texture2D" uid="uid://d1o03b8j1b0ps" path="res://asset/CDI.svg" id="1_x2igu"]
+[ext_resource type="Texture2D" uid="uid://c2pmwaajlui4j" path="res://asset/CDI_HORI.svg" id="2_8352q"]
+[ext_resource type="Texture2D" uid="uid://8a3mygmujm2s" path="res://asset/CDI_RING.svg" id="2_kr7di"]
+[ext_resource type="Texture2D" uid="uid://dp6cqf0espe4m" path="res://asset/CDI_VERT.svg" id="3_kr7di"]
+[ext_resource type="Texture2D" uid="uid://4jw6ambwv6dv" path="res://asset/CDI_OBS.svg" id="6_y3ek2"]
+
+[node name="Cdi" type="Control" unique_id=438615414]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 217.15659
+offset_bottom = 214.85318
+script = ExtResource("1_8352q")
+
+[node name="CDI" type="TextureRect" parent="." unique_id=676559547]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -306.0
+offset_right = 306.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("1_x2igu")
+
+[node name="VERT" type="TextureRect" parent="CDI" unique_id=280110146]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -306.0
+offset_right = 306.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("3_kr7di")
+expand_mode = 4
+stretch_mode = 3
+
+[node name="HORI" type="TextureRect" parent="CDI" unique_id=1630331260]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -306.0
+offset_right = 306.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_8352q")
+expand_mode = 4
+stretch_mode = 3
+
+[node name="RING" type="TextureRect" parent="." unique_id=1977245886]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -306.0
+offset_right = 306.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_kr7di")
+
+[node name="OBS" type="TextureRect" parent="." unique_id=2048036725]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -306.0
+offset_right = 306.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("6_y3ek2")
+
+[connection signal="mouse_entered" from="OBS" to="." method="_on_obs_mouse_entered"]
+[connection signal="mouse_exited" from="OBS" to="." method="_on_obs_mouse_exited"]

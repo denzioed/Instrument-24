@@ -1,0 +1,253 @@
+[gd_scene format=3 uid="uid://bkjdufa1wf4a6"]
+
+[ext_resource type="Script" uid="uid://bqktn2byv0abj" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://hed1403hqsyk" path="res://plane_sprite.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://dbm70vsy0ayjd" path="res://camera_2d.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dti3to62rustc" path="res://asset/maps.svg" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dk81r2bbs8sgh" path="res://asset/tokyo_ground.svg" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://doe27kbi7y1y8" path="res://asset/enroutechart.svg" id="5_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://dqyskssj8wn42" path="res://LOC.tscn" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://byo3brmi7v1uc" path="res://asset/grindavik_ground.svg" id="10_4c57u"]
+[ext_resource type="Texture2D" uid="uid://di48glg8ngtra" path="res://asset/rockford_ground.svg" id="11_efxa6"]
+[ext_resource type="Script" uid="uid://do31iabif15bj" path="res://NAVAIDS/vor.gd" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://bjfq1jinnm4kt" path="res://asset/perth_ground.svg" id="13_ycdy4"]
+
+[node name="Node2D" type="Node2D" unique_id=1836387273]
+script = ExtResource("1_0xm2m")
+plane_sprite = ExtResource("2_h2yge")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=14718801]
+ignore_rotation = false
+zoom = Vector2(0.8, 0.8)
+script = ExtResource("4_1bvp3")
+
+[node name="PerthGround" type="Sprite2D" parent="." unique_id=943364248]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("13_ycdy4")
+
+[node name="Maps" type="Sprite2D" parent="." unique_id=1494169805]
+position = Vector2(0.5043182, 0.10087585)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_lquwl")
+
+[node name="Enroutechart" type="Sprite2D" parent="." unique_id=664632592]
+position = Vector2(7.7513313, 15.809479)
+scale = Vector2(0.11053996, 0.11856933)
+texture = ExtResource("5_ycdy4")
+
+[node name="tokyo_ground" type="Sprite2D" parent="." unique_id=639406485]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_lquwl")
+
+[node name="GrindavikGround" type="Sprite2D" parent="." unique_id=327434248]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_4c57u")
+
+[node name="RockfordGround" type="Sprite2D" parent="." unique_id=1243465440]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("11_efxa6")
+
+[node name="WindowsNode" type="Node" parent="." unique_id=1923868570]
+
+[node name="NAVAIDS" type="Node2D" parent="." unique_id=734350888]
+
+[node name="IRFD_25L_LOC" parent="NAVAIDS" unique_id=532167629 instance=ExtResource("6_7mycd")]
+position = Vector2(-23.775173, 202.27654)
+CRS = 247
+ELEV = 11
+FREQ = "109.900"
+
+[node name="IRFD_25C_LOC" parent="NAVAIDS" unique_id=8527295 instance=ExtResource("6_7mycd")]
+position = Vector2(-13.2352295, 193.73634)
+CRS = 247
+ELEV = 11
+FREQ = "111.700"
+
+[node name="IRFD_25R_LOC" parent="NAVAIDS" unique_id=800029424 instance=ExtResource("6_7mycd")]
+position = Vector2(-27.3277, 196.51248)
+CRS = 247
+ELEV = 11
+FREQ = "108.500"
+
+[node name="IGRV_06_LOC" parent="NAVAIDS" unique_id=924191107 instance=ExtResource("6_7mycd")]
+position = Vector2(-436.61, -26.05)
+CRS = 62
+ELEV = 4
+
+[node name="ITKO_20_LOC" parent="NAVAIDS" unique_id=1048995715 instance=ExtResource("6_7mycd")]
+position = Vector2(-62.945576, -326.29932)
+CRS = 200
+ELEV = 44
+FREQ = "110.500"
+
+[node name="ITKO_31_LOC" parent="NAVAIDS" unique_id=838210671 instance=ExtResource("6_7mycd")]
+position = Vector2(-73.96094, -321.10156)
+ELEV = 9
+FREQ = "108.900"
+
+[node name="GOL" type="Node2D" parent="NAVAIDS" unique_id=731811234]
+position = Vector2(-477.74808, -22.437912)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="VOX" type="Node2D" parent="NAVAIDS" unique_id=1840484142]
+position = Vector2(119.77252, -42.8801)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="RES" type="Node2D" parent="NAVAIDS" unique_id=396577530]
+position = Vector2(3.2451038, -39.358112)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="ROM" type="Node2D" parent="NAVAIDS" unique_id=554896594]
+position = Vector2(94.62507, -106.695244)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="ORG" type="Node2D" parent="NAVAIDS" unique_id=888970335]
+position = Vector2(196.67802, -151.48074)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="GVK" type="Node2D" parent="NAVAIDS" unique_id=1018038780]
+position = Vector2(-433.88513, -32.362717)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="HAW" type="Node2D" parent="NAVAIDS" unique_id=954732251]
+position = Vector2(-393.95132, -59.364464)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="KRT" type="Node2D" parent="NAVAIDS" unique_id=31946860]
+position = Vector2(-508.07016, 247.53198)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="BAR" type="Node2D" parent="NAVAIDS" unique_id=1348268351]
+position = Vector2(-377.44403, 304.79688)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="SAU" type="Node2D" parent="NAVAIDS" unique_id=1361200727]
+position = Vector2(-457.6037, 273.18054)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="TRN" type="Node2D" parent="NAVAIDS" unique_id=1594949500]
+position = Vector2(-22.148811, 301.4851)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="RFD" type="Node2D" parent="NAVAIDS" unique_id=221351018]
+position = Vector2(-35.376614, 203.96182)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="BLA" type="Node2D" parent="NAVAIDS" unique_id=2055665195]
+position = Vector2(-76.06234, 151.12962)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="MLR" type="Node2D" parent="NAVAIDS" unique_id=130656494]
+position = Vector2(-191.08043, 148.01306)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="HME" type="Node2D" parent="NAVAIDS" unique_id=1194313586]
+position = Vector2(-74.012764, -319.0151)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="COC" type="Node2D" parent="NAVAIDS" unique_id=1256864538]
+position = Vector2(162.2514, -272.66415)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="BTM" type="Node2D" parent="NAVAIDS" unique_id=22469203]
+position = Vector2(251.81165, -197.75941)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="TRE" type="Node2D" parent="NAVAIDS" unique_id=1632782206]
+position = Vector2(360.84424, 8.591902)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="NJF" type="Node2D" parent="NAVAIDS" unique_id=2016372471]
+position = Vector2(465.61737, 3.0206757)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="IZO" type="Node2D" parent="NAVAIDS" unique_id=1729782649]
+position = Vector2(455.5654, 42.1468)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="DIZ" type="Node2D" parent="NAVAIDS" unique_id=1446229478]
+position = Vector2(495.44897, 47.196976)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="DET" type="Node2D" parent="NAVAIDS" unique_id=1928705348]
+position = Vector2(477.3104, 179.6132)
+scale = Vector2(0.11053996, 0.11856933)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="CLR" type="Node2D" parent="NAVAIDS" unique_id=2111388586]
+position = Vector2(212.0228, 150.86137)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="DEL" type="Node2D" parent="NAVAIDS" unique_id=1410861836]
+position = Vector2(290.02496, 115.10481)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="KIN" type="Node2D" parent="NAVAIDS" unique_id=1697553652]
+position = Vector2(305.2852, 278.218)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="LCK" type="Node2D" parent="NAVAIDS" unique_id=916111243]
+position = Vector2(219.06914, 319.58456)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="PFO" type="Node2D" parent="NAVAIDS" unique_id=40556786]
+position = Vector2(311.95535, 346.4641)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="HUT" type="Node2D" parent="NAVAIDS" unique_id=1129212929]
+position = Vector2(306.64734, 397.27567)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="DIR" type="Node2D" parent="NAVAIDS" unique_id=1651118036]
+position = Vector2(131.73843, 444.11612)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="CAN" type="Node2D" parent="NAVAIDS" unique_id=1166818407]
+position = Vector2(106.12667, 394.05945)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="PER" type="Node2D" parent="NAVAIDS" unique_id=6089649]
+position = Vector2(169.88127, -206.97964)
+script = ExtResource("12_dg77c")
+metadata/_custom_type_script = "uid://do31iabif15bj"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=173828835]
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer" unique_id=228184943]
+offset_left = 1.5829468
+offset_top = 578.1059
+offset_right = 136.18793
+offset_bottom = 647.9677
+text = "Example-123"
+
+[connection signal="text_changed" from="CanvasLayer/TextEdit" to="." method="_on_text_edit_text_changed"]

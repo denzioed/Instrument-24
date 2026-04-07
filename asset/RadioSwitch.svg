@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15.757597mm"
+   height="5.9770174mm"
+   viewBox="0 0 15.757597 5.9770174"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-83.180456,-113.55937)">
+    <g
+       id="g25"
+       transform="translate(5.0716882,2.305304)"
+       style="display:inline">
+      <rect
+         style="display:inline;fill:#ffffff;stroke:none;stroke-width:0.488711;stroke-dasharray:none"
+         id="rect9"
+         width="15.757596"
+         height="5.9770188"
+         x="78.108772"
+         y="111.25406" />
+      <g
+         id="g10"
+         transform="translate(1.4753143,-18.066892)"
+         style="display:inline">
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+           id="path10"
+           d="m 78.983897,132.30946 1.381277,-0.79748 1.381277,-0.79748 0,1.59496 0,1.59496 -1.381277,-0.79748 z" />
+        <path
+           style="fill:#000000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+           id="path10-9"
+           d="m 78.983897,132.30946 1.381277,-0.79748 1.381277,-0.79748 0,1.59496 0,1.59496 -1.381277,-0.79748 z"
+           transform="rotate(180,84.512256,132.30946)" />
+        <rect
+           style="fill:#000000;stroke:none;stroke-width:0.545308;stroke-dasharray:none"
+           id="rect10"
+           width="5.5316105"
+           height="1.01881"
+           x="81.746452"
+           y="131.80005" />
+      </g>
+    </g>
+    <g
+       id="g42"
+       style="display:none">
+      <rect
+         style="display:inline;fill:#000000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+         id="rect25"
+         width="116.41785"
+         height="28.816299"
+         x="32.850334"
+         y="74.538162" />
+      <rect
+         style="fill:#d40000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+         id="rect26"
+         width="2.0296249"
+         height="28.816299"
+         x="90.044449"
+         y="74.538162" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         x="98.740997"
+         y="113.20176"
+         id="text26"><tspan
+           id="tspan26"
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="98.740997"
+           y="113.20176">STBY</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         x="68.287994"
+         y="113.29478"
+         id="text26-1"><tspan
+           id="tspan26-3"
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="68.287994"
+           y="113.29478">NAV</tspan><tspan
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="68.287994"
+           y="122.11423"
+           id="tspan27" /></text>
+      <g
+         id="g9"
+         transform="matrix(1.000373,0,0,0.81812585,-0.0339641,10.945812)"
+         style="display:inline">
+        <rect
+           style="fill:#333333;stroke-width:2.72521"
+           id="rect1"
+           width="135.244"
+           height="83.37516"
+           x="23.437256"
+           y="60.322121"
+           rx="2"
+           ry="2" />
+        <rect
+           style="fill:none;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+           id="rect1-1"
+           width="135.244"
+           height="83.37516"
+           x="23.437256"
+           y="60.322121"
+           rx="2"
+           ry="2" />
+      </g>
+    </g>
+  </g>
+</svg>

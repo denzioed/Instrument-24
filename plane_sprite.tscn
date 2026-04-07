@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://hed1403hqsyk"]
+
+[ext_resource type="Texture2D" uid="uid://c1aaqsac46ofr" path="res://asset/plane_sprite.svg" id="1_dm8k2"]
+
+[node name="PlaneSprite" type="Node2D" unique_id=2071261899]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1580509718]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_dm8k2")

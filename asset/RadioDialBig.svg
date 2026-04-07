@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="20.529165mm"
+   height="20.529165mm"
+   viewBox="0 0 20.529165 20.529165"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-129.14653,-103.08988)">
+    <g
+       id="g26"
+       transform="translate(14.844608,-1.7031555)"
+       style="display:inline">
+      <circle
+         style="display:inline;fill:#000000;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         id="path26"
+         cx="124.56651"
+         cy="115.05762"
+         r="10" />
+      <circle
+         style="display:none;fill:#000000;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         id="path26-2"
+         cx="124.56651"
+         cy="115.05762"
+         r="6" />
+    </g>
+    <g
+       id="g42"
+       style="display:none">
+      <rect
+         style="display:inline;fill:#000000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+         id="rect25"
+         width="116.41785"
+         height="28.816299"
+         x="32.850334"
+         y="74.538162" />
+      <rect
+         style="fill:#d40000;stroke:none;stroke-width:0.529167;stroke-dasharray:none"
+         id="rect26"
+         width="2.0296249"
+         height="28.816299"
+         x="90.044449"
+         y="74.538162" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         x="98.740997"
+         y="113.20176"
+         id="text26"><tspan
+           id="tspan26"
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="98.740997"
+           y="113.20176">STBY</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+         x="68.287994"
+         y="113.29478"
+         id="text26-1"><tspan
+           id="tspan26-3"
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="68.287994"
+           y="113.29478">NAV</tspan><tspan
+           style="font-size:7.05556px;fill:#ffffff;stroke-width:0.529167"
+           x="68.287994"
+           y="122.11423"
+           id="tspan27" /></text>
+      <g
+         id="g9"
+         transform="matrix(1.000373,0,0,0.81812585,-0.0339641,10.945812)"
+         style="display:inline">
+        <rect
+           style="fill:#333333;stroke-width:2.72521"
+           id="rect1"
+           width="135.244"
+           height="83.37516"
+           x="23.437256"
+           y="60.322121"
+           rx="2"
+           ry="2" />
+        <rect
+           style="fill:none;stroke:#ffffff;stroke-width:0.529167;stroke-dasharray:none"
+           id="rect1-1"
+           width="135.244"
+           height="83.37516"
+           x="23.437256"
+           y="60.322121"
+           rx="2"
+           ry="2" />
+      </g>
+    </g>
+  </g>
+</svg>

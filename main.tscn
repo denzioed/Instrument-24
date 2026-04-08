@@ -60,7 +60,7 @@ FREQ = "109.900"
 [node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25L_LOC" unique_id=315394583]
 position = Vector2(16.369623, -6.946228)
 script = ExtResource("11_dg77c")
-ELEV = 3
+ELEV = 11
 metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="IRFD_25C_LOC" parent="NAVAIDS" unique_id=8527295 instance=ExtResource("6_7mycd")]
@@ -71,7 +71,7 @@ FREQ = "111.700"
 [node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25C_LOC" unique_id=689671755]
 position = Vector2(17.223795, -7.337097)
 script = ExtResource("11_dg77c")
-ELEV = 3
+ELEV = 11
 metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="IRFD_25R_LOC" parent="NAVAIDS" unique_id=800029424 instance=ExtResource("6_7mycd")]
@@ -82,7 +82,7 @@ FREQ = "108.500"
 [node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25R_LOC" unique_id=443784873]
 position = Vector2(15.394218, -6.5540314)
 script = ExtResource("11_dg77c")
-ELEV = 3
+ELEV = 11
 metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="IGRV_06_LOC" parent="NAVAIDS" unique_id=924191107 instance=ExtResource("6_7mycd")]
@@ -102,7 +102,7 @@ FREQ = "110.500"
 [node name="GS" type="Node2D" parent="NAVAIDS/ITKO_20_LOC" unique_id=25141523]
 position = Vector2(6.99984, -19.188568)
 script = ExtResource("11_dg77c")
-ELEV = 1
+ELEV = 5
 metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="ITKO_31_LOC" parent="NAVAIDS" unique_id=838210671 instance=ExtResource("6_7mycd")]
@@ -112,7 +112,7 @@ FREQ = "108.900"
 [node name="GS" type="Node2D" parent="NAVAIDS/ITKO_31_LOC" unique_id=190528890]
 position = Vector2(20.463799, 16.075806)
 script = ExtResource("11_dg77c")
-ELEV = 1
+ELEV = 40
 metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="GOL" type="Node2D" parent="NAVAIDS" unique_id=731811234]

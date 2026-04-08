@@ -11,10 +11,17 @@ var scales = {
 	"VOR":[null,2]
 }
 func deflect(deg,fix_type):
+	if fix_type != "VOR":
+		$Label.text = ""
 	var hori = scales[fix_type][0]
 	var vert = scales[fix_type][1]
 	var deflectx = Vector2.ZERO
 	var deflecty = Vector2.ZERO
+	if abs(deg.x) > 90:
+		deg.x = (180-abs(deg.x))*sign(deg.x)
+		$Label.text = "FROM"
+	else:
+		$Label.text = "TO"
 	if vert:
 		deflectx = Vector2(clamp(deg.x*(50/vert),-200,200),0)
 	if hori:
@@ -33,7 +40,7 @@ func _process(delta: float) -> void:
 		flag = true
 	if flag:
 		OBS_OUT %= 360
-		$RING.rotation = deg_to_rad(OBS_OUT)
+		$RING.rotation = -deg_to_rad(OBS_OUT)
 		obs_change.emit(OBS_OUT)
 func _on_obs_mouse_entered() -> void:
 	obs_hovering = true

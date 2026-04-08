@@ -34,6 +34,7 @@ func _ready():
 	for fix in $NAVAIDS.get_children():
 		if fix.FREQ and len(fix.FREQ)>0:
 			navaid_dictionary[fix.FREQ] = fix
+	cdi_used.connect("obs_change",_on_cdi_obs_change)
 var OBS_OUT = 0
 var assigned_callsign = ""
 func _process(_delta):
@@ -61,7 +62,11 @@ func _process(_delta):
 						var pos = Vector2(target_plane["position"]["x"],target_plane["position"]["y"])
 						var fix = navaid_dictionary.get(radio_win.get_child(0).get_freq())
 						if fix:
-							deflection = fix.get_deflection(pos/100,OBS_OUT)
+							if fix.get_type() == "LOC":
+								deflection = fix.get_deflection(pos/100,target_plane["altitude"])
+								print(deflection)
+							elif fix.get_type() == "VOR":
+								deflection = fix.get_deflection(pos/100,OBS_OUT)
 							win.get_child(0).deflect(deflection,fix.get_type())
 						#cam.deflect(deflection)
 					for callsign in data['d']:

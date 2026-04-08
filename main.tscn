@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://doe27kbi7y1y8" path="res://asset/enroutechart.svg" id="5_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://dqyskssj8wn42" path="res://LOC.tscn" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://byo3brmi7v1uc" path="res://asset/grindavik_ground.svg" id="10_4c57u"]
+[ext_resource type="Script" uid="uid://ct5q6s88a4vvj" path="res://GS.gd" id="11_dg77c"]
 [ext_resource type="Texture2D" uid="uid://di48glg8ngtra" path="res://asset/rockford_ground.svg" id="11_efxa6"]
 [ext_resource type="Script" uid="uid://do31iabif15bj" path="res://NAVAIDS/vor.gd" id="12_dg77c"]
 [ext_resource type="Texture2D" uid="uid://bjfq1jinnm4kt" path="res://asset/perth_ground.svg" id="13_ycdy4"]
@@ -52,38 +53,67 @@ texture = ExtResource("11_efxa6")
 [node name="NAVAIDS" type="Node2D" parent="." unique_id=734350888]
 
 [node name="IRFD_25L_LOC" parent="NAVAIDS" unique_id=532167629 instance=ExtResource("6_7mycd")]
-position = Vector2(-23.775173, 202.27654)
+position = Vector2(-40.473045, 209.37729)
 CRS = 247
-ELEV = 11
 FREQ = "109.900"
 
+[node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25L_LOC" unique_id=315394583]
+position = Vector2(16.369623, -6.946228)
+script = ExtResource("11_dg77c")
+ELEV = 3
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
+
 [node name="IRFD_25C_LOC" parent="NAVAIDS" unique_id=8527295 instance=ExtResource("6_7mycd")]
-position = Vector2(-13.2352295, 193.73634)
+position = Vector2(-31.191576, 201.37114)
 CRS = 247
-ELEV = 11
 FREQ = "111.700"
 
+[node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25C_LOC" unique_id=689671755]
+position = Vector2(17.223795, -7.337097)
+script = ExtResource("11_dg77c")
+ELEV = 3
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
+
 [node name="IRFD_25R_LOC" parent="NAVAIDS" unique_id=800029424 instance=ExtResource("6_7mycd")]
-position = Vector2(-27.3277, 196.51248)
+position = Vector2(-43.008656, 203.1565)
 CRS = 247
-ELEV = 11
 FREQ = "108.500"
 
+[node name="GS" type="Node2D" parent="NAVAIDS/IRFD_25R_LOC" unique_id=443784873]
+position = Vector2(15.394218, -6.5540314)
+script = ExtResource("11_dg77c")
+ELEV = 3
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
+
 [node name="IGRV_06_LOC" parent="NAVAIDS" unique_id=924191107 instance=ExtResource("6_7mycd")]
-position = Vector2(-436.61, -26.05)
+position = Vector2(-425.87906, -31.83524)
 CRS = 62
-ELEV = 4
+
+[node name="GS" type="Node2D" parent="NAVAIDS/IGRV_06_LOC" unique_id=888306998]
+position = Vector2(-11.219727, 5.850271)
+script = ExtResource("11_dg77c")
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="ITKO_20_LOC" parent="NAVAIDS" unique_id=1048995715 instance=ExtResource("6_7mycd")]
-position = Vector2(-62.945576, -326.29932)
+position = Vector2(-70.044266, -306.91385)
 CRS = 200
-ELEV = 44
 FREQ = "110.500"
 
+[node name="GS" type="Node2D" parent="NAVAIDS/ITKO_20_LOC" unique_id=25141523]
+position = Vector2(6.99984, -19.188568)
+script = ExtResource("11_dg77c")
+ELEV = 1
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
+
 [node name="ITKO_31_LOC" parent="NAVAIDS" unique_id=838210671 instance=ExtResource("6_7mycd")]
-position = Vector2(-73.96094, -321.10156)
-ELEV = 9
+position = Vector2(-94.936165, -337.54434)
 FREQ = "108.900"
+
+[node name="GS" type="Node2D" parent="NAVAIDS/ITKO_31_LOC" unique_id=190528890]
+position = Vector2(20.463799, 16.075806)
+script = ExtResource("11_dg77c")
+ELEV = 1
+metadata/_custom_type_script = "uid://ct5q6s88a4vvj"
 
 [node name="GOL" type="Node2D" parent="NAVAIDS" unique_id=731811234]
 position = Vector2(-477.74808, -22.437912)
@@ -113,6 +143,7 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="GVK" type="Node2D" parent="NAVAIDS" unique_id=1018038780]
 position = Vector2(-433.88513, -32.362717)
 script = ExtResource("12_dg77c")
+FREQ = "112.230"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="HAW" type="Node2D" parent="NAVAIDS" unique_id=954732251]
@@ -133,16 +164,19 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="SAU" type="Node2D" parent="NAVAIDS" unique_id=1361200727]
 position = Vector2(-457.6037, 273.18054)
 script = ExtResource("12_dg77c")
+FREQ = "115.350"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="TRN" type="Node2D" parent="NAVAIDS" unique_id=1594949500]
 position = Vector2(-22.148811, 301.4851)
 script = ExtResource("12_dg77c")
+FREQ = "113.100"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="RFD" type="Node2D" parent="NAVAIDS" unique_id=221351018]
 position = Vector2(-35.376614, 203.96182)
 script = ExtResource("12_dg77c")
+FREQ = "113.550"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="BLA" type="Node2D" parent="NAVAIDS" unique_id=2055665195]
@@ -153,11 +187,13 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="MLR" type="Node2D" parent="NAVAIDS" unique_id=130656494]
 position = Vector2(-191.08043, 148.01306)
 script = ExtResource("12_dg77c")
+FREQ = "114.750"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="HME" type="Node2D" parent="NAVAIDS" unique_id=1194313586]
 position = Vector2(-74.012764, -319.0151)
 script = ExtResource("12_dg77c")
+FREQ = "112.200"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="COC" type="Node2D" parent="NAVAIDS" unique_id=1256864538]
@@ -178,11 +214,13 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="NJF" type="Node2D" parent="NAVAIDS" unique_id=2016372471]
 position = Vector2(465.61737, 3.0206757)
 script = ExtResource("12_dg77c")
+FREQ = "112.450"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="IZO" type="Node2D" parent="NAVAIDS" unique_id=1729782649]
 position = Vector2(455.5654, 42.1468)
 script = ExtResource("12_dg77c")
+FREQ = "117.350"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="DIZ" type="Node2D" parent="NAVAIDS" unique_id=1446229478]
@@ -214,11 +252,13 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="LCK" type="Node2D" parent="NAVAIDS" unique_id=916111243]
 position = Vector2(219.06914, 319.58456)
 script = ExtResource("12_dg77c")
+FREQ = "112.800"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="PFO" type="Node2D" parent="NAVAIDS" unique_id=40556786]
 position = Vector2(311.95535, 346.4641)
 script = ExtResource("12_dg77c")
+FREQ = "117.900"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="HUT" type="Node2D" parent="NAVAIDS" unique_id=1129212929]
@@ -239,6 +279,7 @@ metadata/_custom_type_script = "uid://do31iabif15bj"
 [node name="PER" type="Node2D" parent="NAVAIDS" unique_id=6089649]
 position = Vector2(169.88127, -206.97964)
 script = ExtResource("12_dg77c")
+FREQ = "115.430"
 metadata/_custom_type_script = "uid://do31iabif15bj"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=173828835]
